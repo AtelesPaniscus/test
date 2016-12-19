@@ -19,7 +19,7 @@ That would be a real problem for crib tutor:\<p />
   1. paragraphs equate to questions:  a list must fall within a paragraph to be considered a question
   1. paragraphs within lists might 'work' but would not be considered questions in their own right.
 
-\<p />I tried a script that uses the GitHub API directly but my OS is too old for the old Ruby dependency.
+\<p />I tried a script that uses the GitHub API directly but my OS is too old for the only Ruby dependency.
 That is my fault.  I'm still trying to find the original Perl Mardown interpreter.
 
 One thing is clear on GitHub is that the blank line is required at the end of a paragraph
@@ -50,3 +50,6 @@ An ordered list test case is required:
   1. third,
 
 to round off the _tests_.
+
+The hack works with _pandoc_ but not with _python_markdown_.
+The latter does not escape '\<' (or '\&') and fails to escape '\>' adequately even with the Python 3 package.
