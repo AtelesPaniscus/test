@@ -50,3 +50,6 @@ An ordered list test case is required:
   1. third,
 
 to round off the _tests_.
+
+The hack works with _pandoc_ but not with _python_markdown_.
+The latter does not escape '\<' (or '\&') and fails to escape '\>' adequately even with the Python 3 package.
